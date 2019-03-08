@@ -17,7 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ytr-JE-eUk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="14w-DU-rTB">
+                                <rect key="frame" x="50" y="558" width="314" height="135"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="帳號" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k79-8W-zVR">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7Q-6c-iWZ">
+                                        <rect key="frame" x="0.0" y="36" width="314" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spw-9w-oun">
+                                        <rect key="frame" x="0.0" y="72" width="314" height="30"/>
+                                        <state key="normal" title="登入"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDS-Kd-bc8">
+                                        <rect key="frame" x="0.0" y="108" width="314" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="先去逛逛"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fts-s9-dZF" firstAttribute="trailing" secondItem="14w-DU-rTB" secondAttribute="trailing" constant="50" id="cc4-3E-khR"/>
+                            <constraint firstItem="fts-s9-dZF" firstAttribute="bottom" secondItem="14w-DU-rTB" secondAttribute="bottom" constant="120" id="dzR-yf-lD4"/>
+                            <constraint firstItem="14w-DU-rTB" firstAttribute="leading" secondItem="fts-s9-dZF" secondAttribute="leading" constant="50" id="mej-TE-P3Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fts-s9-dZF"/>
                     </view>
                     <navigationItem key="navigationItem" id="jjB-Ec-oSi"/>
